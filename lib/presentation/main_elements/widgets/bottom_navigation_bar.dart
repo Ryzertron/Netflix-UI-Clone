@@ -20,9 +20,9 @@ class BottomNavigator extends StatelessWidget {
           type: BottomNavigationBarType.fixed,
           currentIndex: newIndex,
           backgroundColor: backgroundColor,
-          selectedItemColor: Colors.white,
+          selectedItemColor: whitecolor,
           unselectedItemColor: Colors.grey,
-          selectedIconTheme: const IconThemeData(color: Colors.white),
+          selectedIconTheme: const IconThemeData(color: whitecolor),
           items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
             BottomNavigationBarItem(
@@ -32,8 +32,7 @@ class BottomNavigator extends StatelessWidget {
                 label: 'Fast laughs'),
             BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
             BottomNavigationBarItem(
-                icon: Icon(Icons.arrow_circle_down),
-                label: 'Downloads'),
+                icon: Icon(Icons.arrow_circle_down), label: 'Downloads'),
           ],
         );
       },

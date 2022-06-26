@@ -11,23 +11,25 @@ import 'package:ui_flix/presentation/search/screen_search.dart';
 class ScreenBase extends StatelessWidget {
    ScreenBase({Key? key}) : super(key: key);
 
-   final _pages = const [
-    ScreenHome(),
-    ScreenHotandNew(),
-    ScreenFastLaugh(),
-    ScreenSearch(),
+   final _pages = [
+    const ScreenHome(),
+    const ScreenHotandNew(),
+    const ScreenFastLaugh(),
+    const ScreenSearch(),
     ScreenDownloads(),
    ];
 
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      body: ValueListenableBuilder(
-          valueListenable: bottomNavigationIndex,
-          builder: (BuildContext ctx, int index, Widget? _) {
-            return SafeArea(child:_pages[index] );
-          }),
-      bottomNavigationBar: BottomNavigator(),
+      body: SafeArea(
+        child: ValueListenableBuilder(
+            valueListenable: bottomNavigationIndex,
+            builder: (BuildContext ctx, int index, Widget? _) {
+              return SafeArea(child:_pages[index] );
+            }),
+      ),
+      bottomNavigationBar: const BottomNavigator(),
     );
   }
 }
