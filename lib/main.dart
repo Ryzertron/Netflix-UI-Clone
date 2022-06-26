@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_flix/core/colors/colors.dart';
+import 'package:ui_flix/core/colors/constant_colors.dart';
 import 'package:ui_flix/presentation/main_elements/screen_base.dart';
 
 void main() {
