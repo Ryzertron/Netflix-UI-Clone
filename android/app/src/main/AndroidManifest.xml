@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ui_flix">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="ui_flix"
         android:name="${applicationName}"

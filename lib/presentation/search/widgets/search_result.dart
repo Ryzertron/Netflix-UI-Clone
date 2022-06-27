@@ -1,8 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:ui_flix/presentation/search/widgets/search_headline.dart';
-import 'package:ui_flix/presentation/search/widgets/search_idle.dart';
 
 class SearchResult extends StatelessWidget {
   const SearchResult({Key? key}) : super(key: key);
@@ -12,7 +9,7 @@ class SearchResult extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SearchHeadline(headline: 'Movies & TV'),
+        const SearchHeadline(headline: 'Movies & TV'),
         Expanded(
           child: GridView.count(
             childAspectRatio: 2/3,
