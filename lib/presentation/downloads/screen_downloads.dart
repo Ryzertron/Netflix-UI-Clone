@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:ui_flix/presentation/downloads/widgets/button_widget.dart';
 import 'package:ui_flix/presentation/downloads/widgets/display_image.dart';
 import 'package:ui_flix/presentation/downloads/widgets/download_text.dart';
-import 'package:ui_flix/presentation/downloads/widgets/smart_dowwnloads.dart';
+import 'package:ui_flix/presentation/downloads/widgets/smart_downloads.dart';
 import 'package:ui_flix/presentation/main_elements/widgets/app_bar_widget.dart';
+
+/// This class is the base screen of the Downloads page.
 
 class ScreenDownloads extends StatelessWidget {
   ScreenDownloads({Key? key}) : super(key: key);

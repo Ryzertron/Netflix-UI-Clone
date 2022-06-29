@@ -2,6 +2,9 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+/// A simple set of three images to be shown as a 
+/// display background on the Downloads page.
+
 class ImageDisplaySet extends StatelessWidget {
   ImageDisplaySet({Key? key}) : super(key: key);
 
@@ -52,6 +55,7 @@ class ImageDisplaySet extends StatelessWidget {
 }
 
 
+/// The template of the image shown on the background of Downloads.
 
 class DownloadDisplayImage extends StatelessWidget {
   const DownloadDisplayImage({

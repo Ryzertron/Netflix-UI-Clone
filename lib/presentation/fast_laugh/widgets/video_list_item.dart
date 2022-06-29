@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ui_flix/core/colors/constant_colors.dart';
+import 'package:ui_flix/core/constant_values.dart';
+
+///This is the template for a video that is to be played on fastLaughs page.
+///This template is used in the PageView widget in ScreenFastLaugh.
 
 class VideoListItem extends StatelessWidget {
   const VideoListItem({Key? key, required this.color}) : super(key: key);
@@ -50,6 +53,9 @@ class VideoListItem extends StatelessWidget {
     );
   }
 }
+
+/// This class defines the template of Action button which stay on top of the video,
+/// Eg:[Play,LOL,MyList,Share,UserProfile ].
 
 class VideoActions extends StatelessWidget {
   final IconData icon;

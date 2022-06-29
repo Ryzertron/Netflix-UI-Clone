@@ -1,30 +1,23 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:ui_flix/core/colors/constant_colors.dart';
 import 'package:ui_flix/presentation/search/widgets/search_idle.dart';
-import 'package:ui_flix/presentation/search/widgets/search_result.dart';
+
+/// This is the base screen of the Search Page.
 
 class ScreenSearch extends StatelessWidget {
   const ScreenSearch({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-              _SearchBar(),
-              // Expanded(child: SearchIdle()),
-              Expanded(child: SearchResult()),
-            ],
-          ),
-        ),
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: const [
+          _SearchBar(),
+          Expanded(child: SearchIdle()),
+          // Expanded(child: SearchResult()),
+        ],
       ),
     );
   }

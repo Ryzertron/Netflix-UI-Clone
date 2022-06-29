@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui_flix/core/colors/constant_colors.dart';
+import 'package:ui_flix/core/constant_values.dart';
 
 class SmartDownloads extends StatelessWidget {
-  const SmartDownloads({
-    Key? key,
-  }) : super(key: key);
+  const SmartDownloads({Key? key}) : super(key: key);
+
+  /// A settings button for the configuration of Smart Downloads.
 
   @override
   Widget build(BuildContext context) {

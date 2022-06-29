@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui_flix/core/colors/constant_colors.dart';
+import 'package:ui_flix/core/constant_values.dart';
+
+/// This widget contains two buttons that is to be displayed
+///  at the bottom of the Downloads page
 
 class ButtonSet extends StatelessWidget {
-  const ButtonSet({
-    Key? key,
-  }) : super(key: key);
+  const ButtonSet({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

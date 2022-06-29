@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui_flix/presentation/search/widgets/search_headline.dart';
+import 'package:ui_flix/presentation/main_elements/widgets/movie_category_title.dart';
 
 const idleImageListUrl = [
   'https://image.tmdb.org/t/p/w533_and_h300_bestv2/r2GAjd4rNOHJh6i6Y0FntmYuPQW.jpg',
@@ -43,6 +43,11 @@ const idleImageListName = [
   'Doctor Strange in the Multiverse of Madness'
 ];
 
+/// This is the widget showing the suggestions or Top Searches to the user
+/// when the user first enters the search page. It returns a list of rows 
+/// each containing a TopSearchTile widget holding a thumbnail, a Text widget
+///  holding the title and a Play Button. 
+
 class SearchIdle extends StatelessWidget {
   const SearchIdle({Key? key}) : super(key: key);
 
@@ -51,7 +56,7 @@ class SearchIdle extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SearchHeadline(headline: 'Top Searches',),
+        const CategoryTitle(headline: 'Top Searches',),
         Expanded(
           child: ListView.separated(
             shrinkWrap: true,
@@ -69,7 +74,8 @@ class SearchIdle extends StatelessWidget {
   }
 }
 
-
+/// This class defines the template of the thumbnail to be shown 
+/// on the SearchIdle page.
 class TopSearchTile extends StatelessWidget {
   const TopSearchTile({Key? key, required this.id}) : super(key: key);
   final int id;

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:ui_flix/core/colors/constant_colors.dart';
+import 'package:ui_flix/core/constant_values.dart';
 
 ValueNotifier<int> bottomNavigationIndex = ValueNotifier(0);
+
+/// The Bottom Navigation Bar used for the app.
 
 class BottomNavigator extends StatelessWidget {
   const BottomNavigator({Key? key}) : super(key: key);

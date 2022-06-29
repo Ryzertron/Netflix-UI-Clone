@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SearchHeadline extends StatelessWidget {
-  const SearchHeadline({
+/// A default Heading Style used throughout the app.
+
+class CategoryTitle extends StatelessWidget {
+  const CategoryTitle({
     Key? key, required this.headline,
   }) : super(key: key);
 

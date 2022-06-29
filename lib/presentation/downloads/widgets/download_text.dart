@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+/// A Documentation text displayed on the Downloads page.
+
 class DownloadsText extends StatelessWidget {
   const DownloadsText({Key? key}) : super(key: key);
 
