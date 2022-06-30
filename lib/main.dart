@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      scrollBehavior: CustomScrollBehavior(),
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -27,6 +28,17 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.grey,
       ),
       home: ScreenBase(),
+    );
+  }
+}
+
+class CustomScrollBehavior extends ScrollBehavior {
+  @override
+  Widget buildOverscrollIndicator(
+      BuildContext context, Widget child, ScrollableDetails details) {
+    return StretchingOverscrollIndicator(
+      axisDirection: details.direction,
+      child: child,
     );
   }
 }

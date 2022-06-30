@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ui_flix/core/constant_values.dart';
-import 'package:ui_flix/presentation/main_elements/widgets/app_bar_widget.dart';
 
 /// This is the definition of the custom made app bar for Home Screen.
 
